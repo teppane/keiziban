@@ -1,0 +1,23 @@
+body{
+    background-color:#BC8F8F
+}
+
+h1{
+    font-size:350;
+}
+
+    h7{
+        font-size:400%;
+        color:red;
+        margin:0
+}
+h11{
+    background-color:#F8F8FF;
+    font-size:300%;
+    margin:0
+}
+p1{
+    margin:6;
+    color:green;
+    background-color:white;
+}
