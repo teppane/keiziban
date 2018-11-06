@@ -29,26 +29,40 @@ fclose($fp);
 
 <!DOCTYPE html>
 
+
 <meta charset="UTF-8">
-<title>Nちゃねえる</title>
+
+
+
+<font face="arial black">
+
 <h7>N</h7><h11>ちゃんねる</h11>
+<input type="button" value="     更新     " onclick="window.location.reload();" />
+</font>
+<br><br>
 <h1>[概要]</h1>
 
-<div class="haikei1"><p1>とりあえず、好きなこと書き込んでください。でも、この掲示板への迷惑行為。</p1><br><p1>エロチャはなしで。(するなら別の場所に移しておなしゃす。)</p1>
+<div class="haikei1"><p1>とりあえず、好きなこと書き込んでください。でも、この掲示板への迷惑行為。</p1><br><p1>上の更新ボタンで投稿一覧を更新できます</p1>
 </div>
 
 <link rel="stylesheet" href="keiziban.css">
-
+<br><br>
 <section>
-    <h1>新規投稿</h1><h3>(ニックネームと本文を記入してください)</h3>
+
+    <h1>[新規投稿]</h1><h3>(ニックネームと本文を記入してください)</h3>
+    <br>
+    <div>
     <form action="" method="post">
         名前: <input type="text" name="name" value=""><br>
         本文: <input type="text" name="text" value=""><br>
         <button type="submit">投稿</button>
     </form>
+    </div>
 </section>
-<section>
-    <h2>投稿一覧</h2>
+<section><br><br>
+    <h1>[投稿一覧]</h1>
+
+    <div>
     <?php if (!empty($rows)): ?>
     <ul>
 <?php foreach ($rows as $row): ?>
@@ -58,6 +72,5 @@ fclose($fp);
 <?php else: ?>
     <p>投稿はまだありません</p>
     <?php endif; ?>
-
-
+    </div>
 </section>
